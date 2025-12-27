@@ -99,3 +99,48 @@ h2 {
   color: #64748b;
   border-top: 1px solid #020617;
 }
+
+/* ===== スクロールフェードイン用 ===== */
+.fade-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* 表示された状態 */
+.fade-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Worksカード：ホバー強化 ===== */
+.work-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(56,189,248,0.35);
+}
+
+/* ===== トップへ戻るボタン ===== */
+#backToTop {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  padding: 10px 14px;
+  font-size: 14px;
+  background: #38bdf8;
+  color: #020617;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#backToTop.show {
+  opacity: 1;
+  pointer-events: auto;
+}
