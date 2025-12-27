@@ -1,1 +1,101 @@
-body { color: red; }
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.7;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  color: #94a3b8;
+  margin-top: 10px;
+}
+
+/* Layout */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-left: 4px solid #38bdf8;
+  padding-left: 12px;
+}
+
+/* Skills */
+.skills ul {
+  list-style: none;
+}
+
+.skills li {
+  margin-bottom: 10px;
+  color: #cbd5f5;
+}
+
+/* Works */
+.works {
+  display: grid;
+  gap: 20px;
+}
+
+.work-card {
+  background: #020617;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(56,189,248,0.2);
+}
+
+.work-card h3 {
+  margin-bottom: 8px;
+}
+
+.work-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+/* Contact */
+.contact a {
+  color: #38bdf8;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px;
+  color: #64748b;
+  border-top: 1px solid #020617;
+}
